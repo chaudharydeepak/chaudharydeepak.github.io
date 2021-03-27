@@ -1,36 +1,93 @@
-# Jekyll-Uno with Projects as Timeline
-A Jekyll Theme, based on the Uno-Theme with a list of projects as Timeline.
+# Jekyll Resume Theme
 
-## How does is look
-[Demo](http://thomas.zuehlke.family/)
-![Screenshot](screenshot-overview.png)
-![jekyll-theme-desktop](https://user-images.githubusercontent.com/32843441/72224870-5451ff00-357f-11ea-8fc2-bfbd4499bc63.gif)
-![jekyll-theme-mobil](https://user-images.githubusercontent.com/32843441/72224877-6a5fbf80-357f-11ea-920b-dfae72bf2fbe.gif)
+Live demo at https://jekyll-theme-minimal-resume.netlify.com/
 
-## Installation/Setup
-1. Download or clone repo `git clone https://github.com/tzuehlke/jekyll-uno-timeline.git`
-2. Enter the folder: `cd jekyll-uno-timeline/`
-3. Build it: `jekyll build`
-4. Start Jekyll server: `jekyll serve`
-5. Configure: `_config.yml`
-   * at least set `font_awesome` or download and add the font in `head.html`
+[![Netlify Status](https://api.netlify.com/api/v1/badges/24d80ae8-c3d9-4645-a6d8-9e97fc8dec3c/deploy-status)](https://app.netlify.com/sites/jekyll-theme-minimal-resume/deploys)
 
-Access via: [http://localhost:4000/](http://localhost:4000/)
+# Stack
 
-## Details/Features/Changes
-* based on the [Uno-Theme](https://github.com/joshgerdes/jekyll-uno), but:
-  * removed everything with posts
-  * `content-wrapper` can be shown or hidden with button
-  * changed all icons to [Font-Awesome](https://fontawesome.com/)
-  * updated google-analytics snipped
-  * added [Meetup-Link](https://www.meetup.com/)
-  * removed RSS
-  * removed Disqus
-  * using a Timeline-Design instead of posts, therefore no pagination anymore
-* using Timeline ([CSS](https://github.com/le4ker/personal-jekyll-theme/blob/master/css/timeline.scss), [HTML](https://github.com/le4ker/personal-jekyll-theme/blob/master/_includes/timeline.html) ) from [{ Personal } Jekyll Theme](https://github.com/le4ker/personal-jekyll-theme) for a list of projects, but:
-  * still with 3 layouts for different screen-width, but without images on small screens
-  * timeline information source is now `_data/projects.yaml`
-  * always using the `timeline-inverted`-class, for text on the right side of the images
-* using [github_api.js](https://github.com/jarrekk/Jalpc/blob/master/static/js/github_api.js) from [Jalpc.](https://github.com/jarrekk/Jalpc), but:
-  * changed the GitHub-URL for using with persons and organisations
-  * added watchers number
+![](https://img.shields.io/badge/jekyll-✓-blue.svg)
+![](https://img.shields.io/badge/html5-✓-blue.svg)
+![](https://img.shields.io/badge/sass-✓-blue.svg)
+![](https://img.shields.io/badge/sweet--scroll-✓-blue.svg)
+![](https://img.shields.io/badge/particle--js-✓-blue.svg)
+![](https://img.shields.io/badge/font--awesome-✓-blue.svg)
+![](https://img.shields.io/badge/devicon-✓-blue.svg)
+![](https://img.shields.io/badge/gulp-✓-blue.svg)
+
+***
+
+<h3 align="center">Please help this repo with a :star: if you find it useful! :blush:</h3>
+
+***
+
+# Screenshot
+
+<p align="center">
+  <img src="https://github.com/murraco/jekyll-theme-minimal-resume/blob/master/screenshot.png" width="90%" />
+</p>
+
+# Quick Setup
+
+1. Install Jekyll: `gem install jekyll bundler`
+2. Fork this repository and clone your fork
+3. Edit `_config.yml` to personalize your site
+
+# Settings
+
+You have to fill some informations on `_config.yml` to customize your site:
+
+## Site settings
+```yml
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:3000" # the base hostname & protocol for your site
+```
+
+## User settings
+```yml
+username: Lorem Ipsum
+user_description: Software Engineer at Lorem Ipsum Dolor
+user_title: Mauricio Urraco
+email: mauriurraco@gmail.com
+```
+
+> Don't forget to change your URL before you deploy your site!
+
+# Color and Particle Customization
+
+- Color Customization
+  - Edit the `.sass` variables
+- Particle Customization
+  - Edit the json data in particle function in `app.js`
+  - Refer to `Particle.js` for help
+
+# Content
+
+You can (and should) edit the `.html` files for adding your own information, icons, working experience, social links or whatever you want to add. I.e.:
+
+```html
+<a aria-label="My Github" target="_blank" href="https://github.com/murraco">
+  <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+</a>
+```
+
+# Running locally
+
+In order to compile the assets and run `Jekyll` locally you need to follow those steps:
+
+1. Install Jekyll
+2. Run `bundle install`
+3. Run `bundle exec jekyll build`
+4. Start and http-server in the folder `_site`
+
+# Contribution
+
+- Report issues
+- Open pull request with improvements
+- Spread the word
+- Reach out to me directly at <mauriurraco@gmail.com>
+
+# Credits
+
+- [Nathan Randecker](https://github.com/nrandecker)
